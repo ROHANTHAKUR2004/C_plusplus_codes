@@ -14,6 +14,7 @@ double knapsack(vector<int>&profit,vector<int>&weights,int n,int W){
     }
     sort(arr.begin(),arr.end(),cmp);
     double result = 0;
+    
     for(int i=0;i<n;i++){
         if(arr[i].second <= W){
             result += arr[i].first;
